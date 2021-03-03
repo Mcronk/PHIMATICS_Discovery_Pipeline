@@ -1,0 +1,16 @@
+{
+  "name": "agc_pipeline",
+  "version": "1.0.0",
+  "description": "",
+  "main": "pull.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csvtojson": "^2.0.10",
+    "ibm-cos-sdk": "^1.9.0",
+    "ibm-watson": "^6.0.2"
+  }
+}
