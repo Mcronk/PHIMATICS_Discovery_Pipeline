@@ -18,8 +18,7 @@ const discovery = new DiscoveryV1({
   authenticator: new IamAuthenticator({
     apikey: "{Discovery API Key}"
   }),
-  serviceUrl:
-    "https://api.us-south.discovery.watson.cloud.ibm.com/instances/60bbf2f0-1a8f-49e5-962d-a7e68ee50032"
+  serviceUrl: "{Discovery Service URL}"
 });
 const discoveryCollectionId = "{Collection ID}";
 const discoveryEnvironmentId = "{ENV ID}";
@@ -30,8 +29,7 @@ const languageTranslator = new LanguageTranslatorV3({
   authenticator: new IamAuthenticator({
     apikey: "{Translator API Key}"
   }),
-  serviceUrl:
-    "https://api.us-south.language-translator.watson.cloud.ibm.com/instances/f73b15da-9299-481c-92cc-2c73b517d015"
+  serviceUrl: "{Translator Service URL}"
 });
 
 //Main function passing in "args" provided by Cloud Functions Trigger
