@@ -2,18 +2,18 @@
 
 Steps to push to update Cloud Functions Action
 
-#Install packages
+### Install packages
 npm install
 
-#Create zip file
+### Create zip file
 zip -r discoveryPipeline.zip .
 
-#Target the ibmcloud namespace
+### Target the ibmcloud namespace
 ibmcloud fn namespace list
 ibmcloud fn namespace target {Namespace}
 
-#Create new action
+### Create new action
 ibmcloud fn action create discoveryPipeline discoveryPipeline.zip --kind nodejs:12
 
-#Update action
+### Update action
 ibmcloud fn action update discoveryPipeline discoveryPipeline.zip --kind nodejs:12
